@@ -6,7 +6,6 @@ env:
   secrets_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
   secrets_host: ${{ secrets.SSH_HOST }}
   secrets_user: ${{ secrets.SSH_USER }}
-  secrets_port: ${{ secrets.SSH_PORT }}
 
 jobs:
   run-tests:
@@ -39,7 +38,6 @@ jobs:
           host: secrets_host
           key: secrets_private_key
           username: secrets_user
-          port: secrets_port
 
           script:
             mkdir test
