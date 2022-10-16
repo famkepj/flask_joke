@@ -42,11 +42,11 @@ jobs:
         key: secrets_private_key
         username: secrets_user
         port: 22
-        passphrase: "secret_passphrase"
-    - name: Install doctl
-      uses: digitalocean/action-doctl@v2
-      with:
-        token: secrets_digital_ocean
+#        passphrase: "secret_passphrase"
+#    - name: Install doctl
+#      uses: digitalocean/action-doctl@v2
+#      with:
+#        token: secrets_digital_ocean
 
         script:
             mkdir test
