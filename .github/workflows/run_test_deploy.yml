@@ -28,10 +28,6 @@ jobs:
     needs: run-tests
     runs-on: ubuntu-latest
     steps:
-    - name: Install doctl
-      uses: digitalocean/action-doctl@v2
-      with:
-        token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
     - name: Install SSH Key
       uses: shimataro/ssh-key-action@v2
       with:
@@ -46,6 +42,11 @@ jobs:
         key: secrets_private_key
         username: secrets_user
         port: 22
+        passphrase: "secret_passphrase"
+    - name: Install doctl
+      uses: digitalocean/action-doctl@v2
+      with:
+        token: secrets_digital_ocean
 
         script:
             mkdir test
