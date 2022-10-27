@@ -48,8 +48,11 @@ jobs:
 #      with:
 #        token: secrets_digital_ocean
 
-        script:
-            mkdir test
-            cd test
-            git clone git@github.com:famkepj/flask_joke.git
-            echo 'deployment succesful to digital ocean'
+        script: |
+           # mkdir test
+           # cd test
+           # git clone git@github.com:famkepj/flask_joke.git
+          cd /home
+          mkdir /home/test
+          touch /home/test/fooooo.txt
+          echo 'deployment succesful to digital ocean'
