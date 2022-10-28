@@ -47,6 +47,7 @@ jobs:
 #      uses: digitalocean/action-doctl@v2
 #      with:
 #        token: secrets_digital_ocean
+# nsnkjksk
 
         script: |
           mkdir test
