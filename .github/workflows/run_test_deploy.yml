@@ -50,8 +50,6 @@ jobs:
 
 
         script: |
-          mkdir test
-          cd test
           echo hello world
-          git clone https://${{secrets.GITHUB_TOKEN}}@github.com/famkepj/flask_joke.git
+          git clone https://${{secrets.GITHUB_TOKEN}}@github.com/famkepj/flask_joke.git /home/farm
        
