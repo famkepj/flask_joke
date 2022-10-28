@@ -51,5 +51,5 @@ jobs:
 
         script: |
           echo hello world
-          git clone https://${{secrets.GITHUB_TOKEN}}@github.com/famkepj/flask_joke.git /home/farm
+          git clone https://${{secrets.GITHUB_TOKEN}}@github.com/famkepj/flask_joke.git 
        
