@@ -52,5 +52,5 @@ jobs:
         script: |
           mkdir test
           cd test
-          git clone git@github.com:famkepj/flask_joke.git
+          echo hello world
        
