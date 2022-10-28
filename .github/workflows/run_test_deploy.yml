@@ -2,12 +2,12 @@ name: Run tests & deploy
 
 on: push
 
-env:
-  secrets_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-  secrets_host: ${{ secrets.SSH_HOST }}
-  secrets_user: ${{ secrets.SSH_USER }}
-  secrets_port: 22
-  secrets_digital_ocean: ${{ secrets.DIGITALOCEAN_ACCES_TOKEN }}
+# env:
+#   secrets_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+#   secrets_host: ${{ secrets.SSH_HOST }}
+#   secrets_user: ${{ secrets.SSH_USER }}
+#   secrets_port: 22
+#   secrets_digital_ocean: ${{ secrets.DIGITALOCEAN_ACCES_TOKEN }}
 
 jobs:
   run-tests:
@@ -38,9 +38,9 @@ jobs:
     - name: Deploy with digitalocean
       uses: appleboy/ssh-action@v0.1.2
       with:
-        host: $secrets_host
-        key: $secrets_private_key
-        username: $secrets_user
+        host: ${{ secrets.SSH_HOST }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        username: ${{ secrets.SSH_USER }}
         port: 22
 #        passphrase: "secret_passphrase"
 #    - name: Install doctl
