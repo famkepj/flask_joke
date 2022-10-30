@@ -3,8 +3,8 @@ app = Flask(__name__, template_folder='templates')
 
 @app.route('/')
 def index():
-#	return("hello welkom  on my joke page")
-        return render_template ('index.html')
+	return("hello welkom on my joke page, vandaag is het 30 oktober")
+#        return render_template ('index.html')
 
 @app.route('/joke')
 def joke():

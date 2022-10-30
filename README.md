@@ -43,6 +43,6 @@ env:
 
 
 3) (optional) Anything of note that you want to share about the process of solving this assignment.
-- I hade many errors in my workflow but everytime it tells you what is wrong, so eventually evrything is working
+- I hade many errors in my workflow but everytime it tells you what is wrong, so eventually everything is working
 - At the end I am lost everything is working, but still not published. 
 - I start over again in the module deployment and make everything step by step
