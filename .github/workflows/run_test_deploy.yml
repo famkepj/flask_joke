@@ -33,6 +33,5 @@ jobs:
         script: |
           rm -r /home/flask_joke
           git clone https://${{secrets.GITHUB_TOKEN}}@github.com/famkepj/flask_joke.git /home/flask_joke
-          pkill gunicorn
-          gunicorn main:app
+          systemctl restart gunicorn
           echo 'deployment succesful to digital ocean'
