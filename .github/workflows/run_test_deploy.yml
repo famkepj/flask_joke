@@ -31,6 +31,6 @@ jobs:
 
 
         script: |
-          cd /home/farm
+          cd /home/
           git clone https://${{secrets.GITHUB_TOKEN}}@github.com/famkepj/flask_joke.git 
           echo 'deployment succesful to digital ocean'
